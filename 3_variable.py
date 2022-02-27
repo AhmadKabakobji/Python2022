@@ -1,0 +1,20 @@
+#1 
+player_lives=3
+#2
+player_username="Ahmad"
+#3
+player_money=10
+#4
+player_number="022 588 5822"
+#5
+my_name="Ahmad"
+#6
+my_age=16
+#7
+current_year=2022
+#8
+print(my_name)
+#9
+print(my_age)
+#10
+print(current_year)
