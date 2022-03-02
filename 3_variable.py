@@ -18,3 +18,25 @@ print(my_name)
 print(my_age)
 #10
 print(current_year)
+#11
+player_surname=" Kabakobji"
+#12
+school_name="King's High School"
+#13
+Favourite_food="Burger"
+#14
+pet_name="ronny"
+#15
+chocolate_blocks=7
+#16
+score=0
+#17
+highest_score=1000
+#18
+laps_completed= 0
+#19
+player_ammo=100
+#20
+current_gear=3
+#21
+current_speed=165
