@@ -9,4 +9,20 @@ user = input("What's your name?")
 #5
 age = input("How old are you?")
 #6
-fav_movie = input("")
+fav_movie = input("whats your fav movie")
+#7
+book = input("What's your fav book")
+#8
+adjective = input("Write an adjective")
+#9
+noun = input("write a noun")
+#10
+verb = input("write a verb")
+#11
+print(user)
+print(age)
+print(fav_movie)
+print(book)
+print(adjective)
+print(noun)
+print(verb)
