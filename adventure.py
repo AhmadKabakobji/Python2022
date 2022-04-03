@@ -137,4 +137,5 @@ def main():
 	#staret the main loop
 
 
-main()
+main
+

@@ -14,8 +14,8 @@ hidden key to main door = Room("you entered the key room,now look for the key to
 NPC = Room("you ")
 hallway = Room("you are in a hallway with two exits")
 leaving castle door = Room("you're in the last position, use the key to unlock the door.")
-basement = Room("you are in the ")
-bedroom2 = Room("you ")
+basement = Room("you are in the basement, there is a key to unlock the green lock on door. ")
+bedroom2 = Room("you're in bedroom2, look for tools to unlock the locks on the main door. ")
 bedroom1 = Room("you are in bedroom1, take a nap and then look for clue for your next step.")
 dead bodies room = Room("you are in the dead bodies room. there is plenty of dead bodies.")
 ghosts room = Room("you're in the most dangerous room in the castle. you should kill all the ghosts in the room and you will find the next clue in one of them.")
@@ -42,3 +42,17 @@ bedroom1.south = ghosts room
 ghosts room.north = bedroom1
 hallway.north = NPC
 dead bodies room.west = kitchen
+
+#binds
+@when("go DIRECTION")
+@when("travel DIRECTION")
+def travel(direction):
+	global current_room
+	if direction in current_room.exits():
+		#cheks if the cureent room list of exits has
+		#the direction the player wants to go
+		current_room = current_room.exit(direction)
+		print(f"you ho {direction}")
+		print(current_room)
+	else:
+		print("you can't go that way")
